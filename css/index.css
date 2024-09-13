@@ -1,0 +1,306 @@
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    color: #fff;
+    font-weight: bold;
+    background-color: #092645;
+    border-radius: 50px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #111827;
+    transition: background-color 0.4s ease, height 0.4s ease;
+    z-index: 5;
+    border-bottom: 5px solid #43B5D0;
+}
+
+
+
+.nav-link {
+    color: #ffffff !important;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #43B5D0 !important;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+    .carousel-inner img {
+        height: 400px;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .carousel-inner img {
+        height: 200px;
+        object-fit: contain;
+    }
+}
+
+
+.carousel {
+    max-height: 500px;
+    overflow: hidden;
+    margin-top: 60px;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .carousel {
+        max-height: 350px;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .carousel {
+        max-height: 250px;
+    }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #004AAC;
+    border-radius: 50%;
+}
+
+.col-md-3 {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #fff;
+}
+
+
+.col-md-3:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+h3 {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+    color: #092645;
+}
+
+
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    font-weight: bold;
+    color: #092645;
+    font-size: 50px;
+}
+
+section p {
+    font-size: 16px;
+    color: #092645;
+}
+
+.img-fluid {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px #111827;
+    object-fit: cover;
+}
+
+.image-container {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+
+.image-container img {
+    transition: transform 0.4s ease-in-out;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+}
+
+.image-container img {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-container:hover img {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.row.text-center .col-md-4 h3 {
+    color: #111827;
+}
+
+
+footer {
+    background-color: #111827 !important;
+    color: #ffffff;
+    border-top: 5px solid #43B5D0;
+}
+
+footer a {
+    color: #43B5D0;
+    display: inline-block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer h5 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer p {
+    font-size: 14px;
+    color: #cccccc;
+}
+
+.program-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 15px;
+    background-color: #111827;
+    text-align: center;
+    color: #43B5D0;
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card-overlay .overlay-img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.card-overlay .overlay-text {
+    position: relative;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    text-align: center;
+}
+
+.program-card:hover .card-overlay {
+    opacity: 1;
+}
+
+.card-text {
+    color: #fff;
+}
+
+h5 {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+/* General styles for the video section */
+.video-section {
+    background-color: #092645;
+    padding: 40px 0;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Styles for the heading within the video section */
+.video-h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Centering the video container and limiting its max width */
+.video-container {
+    max-width: 90%;
+    /* Adjusted to allow for responsiveness */
+    margin: 0 auto;
+}
+
+/* Ensuring the video scales properly */
+video {
+    width: 100%;
+    height: auto;
+}
+
+.video-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/Frontend/img/lugar.JPG');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    z-index: 0;
+}
+
+
+.video-container,
+.video-h2 {
+    position: relative;
+    z-index: 1;
+}
